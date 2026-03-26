@@ -1,0 +1,131 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #284B63;
+    color: white;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+header{
+    padding: 1.6vmin;
+    background-color: #117c84;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+main{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.msg-container{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+    background: rgba(0,0,0,0.8);
+    padding: 1.5rem 2rem;
+    border-radius: 1rem;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+.game{
+    height: 60vmin;
+    width: 60vmin;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5vmin;
+}
+.box{
+    height: 18vmin;
+    width: 18vmin;
+    border-radius: 1.5rem;
+    border: none;
+    box-shadow: 0 0 1rem rgba(0,0,0,0.3);
+    font-size: 8vmin;
+    color: #353535;
+    background-color: aquamarine;
+    transition: all 0.2s ease;
+    cursor: pointer;
+}
+.box:hover{
+    transform: scale(1.05);
+    background-color: #72efdd;
+}
+
+.box:active{
+    transform: scale(0.95);
+    background-color: #72efdd;
+}
+#resetgm{
+    padding: 1rem;
+    font-size: 1rem;
+    border-radius: 0.5rem;
+    background-color: #3C6E71;
+    border: none;
+    color: white;
+    transition: all 0.2s ease;
+    cursor: pointer;
+}
+#resetgm:hover{
+    transform: scale(1.03);
+    background-color: #14bd6c;
+}
+
+#resetgm:active{
+    transform: scale(0.95);
+}
+#msg{
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+#newgm{
+    padding: 1rem;
+    font-size: 1.03rem;
+    border-radius: 0.5rem;
+    background-color: #3C6E71;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+#newgm:hover{
+    transform: translateY(-2px);
+}
+.hide{
+    display: none;
+}
+.rstbtn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 1rem;
+}
+footer{
+    margin-top: auto;
+    background-color: #096c5b;
+    padding: 1.5vmin;
+}
+#ftr{
+    text-decoration: none;
+    color: white;
+}
+#ftr:hover{
+    font-size: 1.03rem;
+    color: rgb(27, 210, 39);
+}
